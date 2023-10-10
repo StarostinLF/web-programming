@@ -1,0 +1,125 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  color: black;
+  text-decoration: none; /* no underline */
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.first-navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.second-navigation {
+  margin-top: 20px;
+  box-shadow: 0 14px 10px -4px rgb(227, 227, 227);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+button {
+  background: none;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 2vw;
+}
+
+form {
+  width: 35vw;
+}
+
+form input {
+  width: 80%;
+  padding: 15px;
+  border: 2px solid #ffcc00;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+form button {
+  float: right;
+  background-color: #ffcc00;
+  border: 2px solid #ffcc00;
+  width: 20%;
+  color: black;
+  padding: 15px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  text-align: center;
+}
+
+.logo {
+  width: 20vw;
+}
+.avatar {
+  width: 3vw;
+}
+.catalog img {
+  padding-right: 10px;
+}
+.second-navigation ul {
+  width: 25vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.icons-container {
+  width: 10vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+.breadcrumbs-item {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
+}
+
+.breadcrumbs-item:not(:last-child):after {
+  content: ">";
+  margin-left: 5px;
+}
+
+.item-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 15vw;
+}
+
+.item-links a img {
+  padding-right: 5px;
+}
