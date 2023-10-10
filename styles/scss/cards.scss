@@ -1,0 +1,95 @@
+.page {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans,
+    Ubuntu, Fira Sans, Helvetica Neue, sans-serif;
+  font-size: 15px;
+  margin: 0 auto;
+  padding: 0;
+  max-inline-size: 1260px;
+}
+
+p,
+h3 {
+  margin: 0;
+}
+
+p {
+  line-height: 1.675;
+}
+
+.services {
+  padding: 50px 0 50px;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  padding: 160px 30px 30px;
+  width: 420px;
+  text-align: center;
+  background: no-repeat url("../../images/cards/creative-idea.svg");
+  background-position: center 36px;
+  background-size: 96px;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid rgba(179, 184, 236, 0.5);
+
+  &:nth-child(2) {
+    background-image: url("../../images/cards/coding2.svg");
+  }
+
+  &:nth-child(3) {
+    background-image: url("../../images/cards/coding.svg");
+  }
+
+  &:nth-child(-n + 3) {
+    border-top: 1px solid rgba(179, 184, 236, 0.5);
+  }
+
+  &:nth-child(3n + 1),
+  &:nth-child(3n + 3) {
+    border-left-color: rgba(179, 184, 236, 0.5);
+    border-right-color: rgba(179, 184, 236, 0.5);
+  }
+
+  &:nth-child(even) {
+    background-color: rgba(179, 184, 236, 0.2);
+  }
+
+  &-name {
+    font-size: 22px;
+  }
+
+  &-content {
+    margin-top: 30px;
+  }
+}
+
+.link {
+  text-decoration: none;
+  align-self: center;
+}
+
+.button {
+  font-size: 18px;
+  padding: 15px;
+  background: white;
+  transition: background 0.3s ease-in-out;
+
+  &:hover {
+    color: white;
+    background: black;
+  }
+
+  &:active {
+    text-decoration: underline;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    box-shadow: 2px 2px 0px 0px black;
+  }
+}

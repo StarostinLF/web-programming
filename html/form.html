@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Форма</title>
+  </head>
+  <body>
+    <h1>Форма</h1>
+    <form>
+      <div class="container">
+        <span>Контактная информация</span><br />
+        Имя: <input type="text" name="firstname" /><br />
+        Фамилия: <input type="text" name="lastname" /><br />
+        Год рождения:
+        <select id="date" name="date">
+          <option value="2000">2000</option>
+          <option value="2010">2010</option>
+          <option value="2020">2020</option>
+        </select>
+        <br />
+        Город: <input type="text" name="town" />
+      </div>
+
+      <textarea
+        rows="10"
+        cols="45"
+        placeholder="Информация о заказе"
+      ></textarea>
+      <br />
+
+      <input type="checkbox" />Я хочу получать рекламу <br />
+      <input type="checkbox" checked />Я хочу чтобы мои данные раздавались всем
+      подряд<br />
+
+      <input type="reset" value="Отчистить" />
+      <input type="submit" value="Отправить!" />
+    </form>
+  </body>
+</html>
