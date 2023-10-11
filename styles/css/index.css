@@ -50,8 +50,14 @@ a {
 }
 
 .section {
+  padding: 0 15px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: 15px;
+}
+@media (width <= 1440px) {
+  .section {
+    padding: 0 100px;
+  }
 }
