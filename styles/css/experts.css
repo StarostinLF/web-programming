@@ -3,14 +3,14 @@
   font-size: 15px;
   margin: 0 auto;
   padding: 0;
-  max-inline-size: 1260px;
+  max-inline-size: 1200px;
 }
 
 .section {
   padding-top: 50px;
   padding-bottom: 50px;
-  text-align: center;
   max-inline-size: inherit;
+  text-align: center;
 }
 .section-title {
   margin-top: 0;
@@ -19,12 +19,12 @@
 }
 
 .expert {
-  padding: 30px 20px;
-  max-width: 301.5px;
+  padding: 30px 0;
+  max-width: 400px;
   width: 100%;
 }
 .expert:nth-child(n+5) {
-  border: 1px solid #d9dbf5;
+  outline: 1px solid #d9dbf5;
 }
 .expert:nth-child(even) {
   background-color: #f0f1fb;
@@ -33,8 +33,8 @@
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  border: 3px solid rgba(179, 184, 236, 0.5);
+  width: inherit;
+  outline: 3px solid rgba(179, 184, 236, 0.5);
   font-size: 0;
 }
 .expert-photo {
@@ -47,29 +47,4 @@
   font-weight: 700;
   font-size: 22px;
   margin-top: 10px;
-}
-
-.link {
-  text-decoration: none;
-  align-self: center;
-}
-
-.button {
-  font-size: 18px;
-  padding: 15px;
-  background: white;
-  transition: background 0.3s ease-in-out;
-}
-.button:hover {
-  color: white;
-  background: black;
-}
-.button:active {
-  text-decoration: underline;
-}
-.button:focus {
-  outline: none;
-}
-.button:focus-visible {
-  box-shadow: 2px 2px 0px 0px black;
 }

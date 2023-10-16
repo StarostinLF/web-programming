@@ -4,15 +4,14 @@
   font-size: 15px;
   margin: 0 auto;
   padding: 0;
-  max-inline-size: 1260px;
+  max-inline-size: 1200px;
 }
 
 .section {
   padding-top: 50px;
   padding-bottom: 50px;
-  text-align: center;
-
   max-inline-size: inherit;
+  text-align: center;
 
   &-title {
     margin-top: 0;
@@ -22,12 +21,12 @@
 }
 
 .expert {
-  padding: 30px 20px;
-  max-width: calc(1206px / 4);
+  padding: 30px 0;
+  max-width: calc(1200px / 3);
   width: 100%;
 
   &:nth-child(n + 5) {
-    border: 1px solid #d9dbf5;
+    outline: 1px solid #d9dbf5;
   }
 
   &:nth-child(even) {
@@ -38,8 +37,8 @@
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    border: 3px solid rgba(179, 184, 236, 0.5);
+    width: inherit;
+    outline: 3px solid rgba(179, 184, 236, 0.5);
     font-size: 0;
   }
 
@@ -54,34 +53,5 @@
     font-weight: 700;
     font-size: 22px;
     margin-top: 10px;
-  }
-}
-
-.link {
-  text-decoration: none;
-  align-self: center;
-}
-
-.button {
-  font-size: 18px;
-  padding: 15px;
-  background: white;
-  transition: background 0.3s ease-in-out;
-
-  &:hover {
-    color: white;
-    background: black;
-  }
-
-  &:active {
-    text-decoration: underline;
-  }
-
-  &:focus {
-    outline: none;
-  }
-
-  &:focus-visible {
-    box-shadow: 2px 2px 0px 0px black;
   }
 }
