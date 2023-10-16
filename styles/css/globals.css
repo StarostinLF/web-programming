@@ -31,3 +31,16 @@ html {
 .button:focus-visible {
   box-shadow: 2px 2px 0px 0px black;
 }
+
+.dialog {
+  font-size: 18px;
+  border: 1px solid black;
+  text-align: center;
+}
+.dialog .button {
+  font-size: 18px;
+}
+.dialog::backdrop {
+  background: black;
+  opacity: 0.5;
+}
