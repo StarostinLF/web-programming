@@ -17,18 +17,18 @@ warning.forEach(function (warning) {
     page.insertAdjacentHTML(
       "beforebegin",
       `
-      <dialog class="dialog" id="dialog-id">
-        <p>Это задание пока не готово. Посмотрите его чуть позднее.</p>
-        <button
-            class="button"
-            type="submit"
-            onclick="closeDialog()"
-            aria-controls="dialog-id"
-          >
-            Закрыть
-        </button>
-      </dialog>
-    `
+        <dialog class="dialog" id="dialog-id">
+          <p>Это задание пока не готово. Посмотрите его чуть позднее.</p>
+          <button
+              class="button"
+              type="submit"
+              onclick="closeDialog()"
+              aria-controls="dialog-id"
+            >
+              Закрыть
+          </button>
+        </dialog>
+      `
     );
     document.querySelector(".dialog").showModal();
   });
@@ -61,4 +61,8 @@ task7.addEventListener("click", function () {
 
 task8.addEventListener("click", function () {
   location.href = "html/task8.html";
+});
+
+task9.addEventListener("click", function () {
+  location.href = "html/task9.html";
 });

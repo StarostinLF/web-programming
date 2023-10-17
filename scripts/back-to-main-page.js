@@ -1,5 +1,5 @@
-let backToMainPage = document.querySelector("#back-to-general-page");
+let backToGeneralPage = document.querySelector("#back-to-general-page");
 
-backToMainPage.addEventListener("click", function () {
+backToGeneralPage.addEventListener("click", function () {
   location.href = "../index.html";
 });
