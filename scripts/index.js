@@ -40,21 +40,21 @@ function closeDialog() {
 }
 
 task5.addEventListener("click", function () {
-  location.href = "../html/task5.html";
+  location.href = "html/task5.html";
 });
 
 task6.addEventListener("click", function () {
-  location.href = "../html/task6.html";
+  location.href = "html/task6.html";
 });
 
 cards.addEventListener("click", function () {
-  location.href = "../html/cards.html";
+  location.href = "html/cards.html";
 });
 
 experts.addEventListener("click", function () {
-  location.href = "../html/experts.html";
+  location.href = "html/experts.html";
 });
 
 task7.addEventListener("click", function () {
-  location.href = "../html/task7.html";
+  location.href = "html/task7.html";
 });
