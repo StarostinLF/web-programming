@@ -1,0 +1,53 @@
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
+  margin: 0 auto;
+  max-inline-size: 960px;
+  inline-size: 100%;
+  color: #222222;
+}
+
+p {
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.course {
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 7px 0 hsla(0, 0%, 4%, 0.05),
+    3px 27px 54px -34px rgba(0, 0, 0, 0.47);
+
+  &s {
+    padding: 70px 0;
+    inline-size: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+  }
+
+  &-img {
+    max-width: 100%;
+  }
+
+  &-preview {
+    padding: 50px;
+    box-sizing: border-box;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fade96;
+  }
+
+  &-name {
+    margin: 0 0 20px;
+    font-size: 28px;
+  }
+
+  &-info {
+    max-width: 660px;
+    padding: 40px 60px;
+  }
+}

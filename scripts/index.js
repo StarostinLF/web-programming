@@ -58,3 +58,7 @@ experts.addEventListener("click", function () {
 task7.addEventListener("click", function () {
   location.href = "html/task7.html";
 });
+
+task8.addEventListener("click", function () {
+  location.href = "html/task8.html";
+});
