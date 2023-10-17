@@ -54,3 +54,7 @@ cards.addEventListener("click", function () {
 experts.addEventListener("click", function () {
   location.href = "../html/experts.html";
 });
+
+task7.addEventListener("click", function () {
+  location.href = "../html/task7.html";
+});
