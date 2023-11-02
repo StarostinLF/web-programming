@@ -1,9 +1,10 @@
-let warning = document.querySelectorAll("#warning"),
+const warning = document.querySelectorAll("#warning"),
   task5 = document.querySelector("#task5"),
   task6 = document.querySelector("#task6"),
+  form = document.querySelector("#form"),
+  yandex = document.querySelector("#yandex"),
   cards = document.querySelector("#cards"),
   experts = document.querySelector("#experts"),
-  form = document.querySelector("#form"),
   task7 = document.querySelector("#task7"),
   task8 = document.querySelector("#task8"),
   task9 = document.querySelector("#task9"),
@@ -39,30 +40,34 @@ function closeDialog() {
   document.querySelector(".dialog").remove();
 }
 
-task5.addEventListener("click", function () {
+task5.addEventListener("click", () => {
   location.href = "html/task5.html";
 });
 
-task6.addEventListener("click", function () {
+task6.addEventListener("click", () => {
   location.href = "html/task6.html";
 });
 
-cards.addEventListener("click", function () {
+/*yandex.addEventListener("click", () => {
+  location.href = "html/yandex.html";
+});*/
+
+cards.addEventListener("click", () => {
   location.href = "html/cards.html";
 });
 
-experts.addEventListener("click", function () {
+experts.addEventListener("click", () => {
   location.href = "html/experts.html";
 });
 
-task7.addEventListener("click", function () {
+task7.addEventListener("click", () => {
   location.href = "html/task7.html";
 });
 
-task8.addEventListener("click", function () {
+task8.addEventListener("click", () => {
   location.href = "html/task8.html";
 });
 
-task9.addEventListener("click", function () {
+task9.addEventListener("click", () => {
   location.href = "html/task9.html";
 });
