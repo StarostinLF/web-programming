@@ -1,6 +1,39 @@
+.page {
+  font-size: 20px;
+  font-weight: normal;
+  min-inline-size: 320px;
+  max-inline-size: 1440px;
+  margin: 0 auto;
+  block-size: 100%;
+}
+
 .link {
   text-decoration: none;
   align-self: center;
+}
+
+.main {
+  padding: 50px 0;
+}
+
+.section {
+  &__title {
+    font-size: 36px;
+    font-weight: normal;
+  }
+
+  &__subtitle {
+    font-size: 26px;
+    font-weight: normal;
+  }
+}
+
+.article {
+  &__custom-text {
+    padding: 50px;
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+  }
 }
 
 .button {
