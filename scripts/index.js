@@ -1,15 +1,13 @@
 const warning = document.querySelectorAll("#warning"),
-  task5 = document.querySelector("#task5"),
-  task6 = document.querySelector("#task6"),
+  football = document.querySelector("#football"),
+  news = document.querySelector("#news"),
   form = document.querySelector("#form"),
   yandex = document.querySelector("#yandex"),
   cards = document.querySelector("#cards"),
   experts = document.querySelector("#experts"),
-  task7 = document.querySelector("#task7"),
-  task8 = document.querySelector("#task8"),
-  task9 = document.querySelector("#task9"),
-  task10 = document.querySelector("#task10"),
-  javascript = document.querySelector("#javascript");
+  itBlog = document.querySelector("#itBlog"),
+  itSpec = document.querySelector("#itSpec"),
+  layout = document.querySelector("#layout");
 
 warning.forEach(function (warning) {
   warning.addEventListener("click", function () {
@@ -40,12 +38,12 @@ function closeDialog() {
   document.querySelector(".dialog").remove();
 }
 
-task5.addEventListener("click", () => {
-  location.href = "html/task5.html";
+football.addEventListener("click", () => {
+  location.href = "html/football.html";
 });
 
-task6.addEventListener("click", () => {
-  location.href = "html/task6.html";
+news.addEventListener("click", () => {
+  location.href = "html/news.html";
 });
 
 /*yandex.addEventListener("click", () => {
@@ -60,14 +58,14 @@ experts.addEventListener("click", () => {
   location.href = "html/experts.html";
 });
 
-task7.addEventListener("click", () => {
-  location.href = "html/task7.html";
+itBlog.addEventListener("click", () => {
+  location.href = "html/itBlog.html";
 });
 
-task8.addEventListener("click", () => {
-  location.href = "html/task8.html";
+itSpec.addEventListener("click", () => {
+  location.href = "html/itSpec.html";
 });
 
-task9.addEventListener("click", () => {
-  location.href = "html/task9.html";
+layout.addEventListener("click", () => {
+  location.href = "html/layout.html";
 });
