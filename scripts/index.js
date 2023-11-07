@@ -11,7 +11,7 @@ const warning = document.querySelectorAll("#warning"),
 
 warning.forEach(function (warning) {
   warning.addEventListener("click", function () {
-    let page = document.querySelector("script");
+    const page = document.querySelector("script");
 
     page.insertAdjacentHTML(
       "beforebegin",
@@ -58,14 +58,14 @@ experts.addEventListener("click", () => {
   location.href = "html/experts.html";
 });
 
-itBlog.addEventListener("click", () => {
+/*itBlog.addEventListener("click", () => {
   location.href = "html/itBlog.html";
-});
+});*/
 
-itSpec.addEventListener("click", () => {
+/*itSpec.addEventListener("click", () => {
   location.href = "html/itSpec.html";
-});
+});*/
 
-layout.addEventListener("click", () => {
+/*layout.addEventListener("click", () => {
   location.href = "html/layout.html";
-});
+});*/
