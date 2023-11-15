@@ -15,14 +15,16 @@
 
   <body class="page">
     <header class="header">
-      <nav>
-        <a>Jet<span>ro</span></a>
-        <ul>
-          <li>Home</li>
-          <li>About us</li>
-          <li>Blog</li>
-          <li>Portfolio</li>
-          <li>Contact us</li>
+      <nav class="nav">
+        <a class="header__logo"
+          >Jet<span class="header__logo_secondary-color">ro</span></a
+        >
+        <ul class="nav__list">
+          <li class="nav__list-item">Home</li>
+          <li class="nav__list-item">About us</li>
+          <li class="nav__list-item">Blog</li>
+          <li class="nav__list-item">Portfolio</li>
+          <li class="nav__list-item">Contact us</li>
         </ul>
       </nav>
     </header>
@@ -32,38 +34,68 @@
         <h1 class="blog__title">Blog</h1>
         <div class="blog__content">
           <div class="blog__list">
-            <div class="blog__list-item">
-              <img src="../images/layout/left_phone.png" alt="phone" class="" />
-              <img src="" alt="" />
-              <article>
-                <div>
-                  <p></p>
-                  <p></p>
-                  <p></p>
-                  <p></p>
+            <div class="blog__list-item item">
+              <img
+                src="../images/layout/left_phone.png"
+                alt="phone"
+                class="item__left-image"
+              />
+              <img
+                src="../images/layout/img_chicken.png"
+                alt="chicken"
+                class="item__image"
+              />
+              <article class="item__text-container">
+                <div class="item__info">
+                  <p class="item__info-title">Date</p>
+                  <p class="item__info-text">April 12, 2012</p>
+                  <p class="item__info-title">Tags</p>
+                  <p class="item__info-text">Website | Design</p>
+                  <p class="item__info-title">Comments</p>
+                  <p class="item__info-text">4</p>
                 </div>
-                <h3></h3>
-                <p></p>
-                <p></p>
+                <div class="item__main-content">
+                  <h3 class="item__title">Top WordPress Themes of 2012</h3>
+                  <p class="item__text">
+                    Lorem ipsum dolor sit amet, sit an molestie neglegentur
+                    concludaturque. Possim hendrerit in usu. Iriure delectus mea
+                    at, vis dicit laudem ex, vel eu possim imperdiet
+                    consequuntur. Brute ipsum tincidunt vim ei. Ne eos vidisse
+                    splendide instructior. Mei no latine praesent forensibus, te
+                    sed habemus tacimates, ad ipsum officiis constituto usu.
+                  </p>
+                  <p class="item__text">
+                    Maecenas ipsum metus, semper hendrerit varius mattis, congue
+                    sit amet tellus. Aliquam ullamcorper dui sed magna posuere
+                    ut elementum enim rutrum. Nam mi erat, porta id ultrices
+                    nec, pellentesque vel nunc. Cras varius fermentum iaculis.
+                  </p>
+                </div>
               </article>
+              <hr class="item__divider" />
             </div>
           </div>
           <div class="blog__menu">
-            <article>
-              <h2></h2>
-              <p></p>
+            <article class="blog__menu-item">
+              <h2 class="blog__menu-title">About Jetro</h2>
+              <p class="blog__menu-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                nec odio. Praese nt libero. Sed cursus ante dapibus diam. Sed
+                nisi. Nulla quis sem at nibh elemen tum imperdiet. Duis sagittis
+                ipsum.
+              </p>
             </article>
-            <article>
-              <h2></h2>
-              <p></p>
-              <p></p>
-              <p></p>
-              <p></p>
-              <p></p>
-              <p></p>
+            <article class="blog__menu-item">
+              <h2 class="blog__menu-title">Categories</h2>
+              <p class="blog__menu-text">Video (3)</p>
+              <p class="blog__menu-text">Sports (5)</p>
+              <p class="blog__menu-text">Media (2)</p>
+              <p class="blog__menu-text">Entertainment (7)</p>
+              <p class="blog__menu-text">Life (4)</p>
+              <p class="blog__menu-text">Super Cool Stuff (8)</p>
             </article>
-            <article>
-              <h2></h2>
+            <article class="blog__menu-item">
+              <h2 class="blog__menu-title">Photo gallery</h2>
               <div></div>
             </article>
           </div>
@@ -71,7 +103,68 @@
       </section>
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <article class="footer__text-container">
+        <h2 class="footer__title">About Jetro</h2>
+        <p>
+          Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea vel.
+          Urbanitas adolescens vim te, per at tritani aperiri. Adhuc invenire
+          convenire his ea. Id mei vitae denique, in eam commodo veritus
+          disputando.
+        </p>
+        <p>
+          Pro et erant delicata, eu vim essent imperdiet accommodare, dictas
+          deseruisse ius an. Solet everti definitionem id ius, sonet oporteat cu
+          vim.
+        </p>
+      </article>
+      <article class="footer__text-container">
+        <h2 class="footer__title">Twitter widget</h2>
+        <div>
+          <p>
+            <span class="mute-color">@pixelmater</span> What an awesome design with great
+            functionality
+          </p>
+          <p class="mute-color">about 1 hour ago</p>
+        </div>
+        <div>
+          <p>
+            <span class="mute-color">@designdude</span> What an awesome design with great
+            functionality
+          </p>
+          <p class="mute-color">about 2 hour ago</p>
+        </div>
+        <p>Follow <span class="mute-color">@bestpsdfreebies</span></p>
+      </article>
+      <article class="footer__text-container">
+        <h2 class="footer__title">Contact us</h2>
+        <p>
+          Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea vel.
+          Urbanitas adolescens vim te, per at tritani aperiri.
+        </p>
+        <address class="address">
+          <a href="#">information@jetro.com</a>
+          <a href="#">1.222.333.4444</a>
+        </address>
+        <ul class="nav__list">
+          <li class="nav__list-item">
+            <img src="../images/layout/bottom_facebook.png" alt="facebook" />
+          </li>
+          <li class="nav__list-item">
+            <img src="../images/layout/bottom_twitter.png" alt="twitter" />
+          </li>
+          <li class="nav__list-item">
+            <img src="../images/layout/bottom_email.png" alt="email" />
+          </li>
+          <li class="nav__list-item">
+            <img src="../images/layout/bottom_rss.png" alt="rss" />
+          </li>
+          <li class="nav__list-item">
+            <img src="../images/layout/bottom_vimeo.png" alt="vimeo" />
+          </li>
+        </ul>
+      </article>
+    </footer>
 
     <button class="button" id="back-to-general-page">
       Вернуться на главную

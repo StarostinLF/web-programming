@@ -17,5 +17,5 @@
   font-style: normal;
   font-weight: 400;
   src: local("HelveticalNeue"), local("HelveticalNeueCyr"),
-    url("./layout/HelveticaNeue\ Thin.ttf") format("truetype");
+    url("./layout/HelveticaNeueCyr-Medium.otf") format("opentype");
 }
