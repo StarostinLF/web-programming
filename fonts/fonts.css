@@ -3,3 +3,19 @@
   font-weight: regular;
   src: url(./YandexSansText-Regular.ttf);
 }
+
+@font-face {
+  font-family: "Bebas";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Bebas"), local("Bebas-Regular"),
+    url(./layout/bebas.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "HelveticalNeue";
+  font-style: normal;
+  font-weight: 400;
+  src: local("HelveticalNeue"), local("HelveticalNeueCyr"),
+    url("./layout/HelveticaNeue\ Thin.ttf") format("truetype");
+}
