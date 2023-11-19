@@ -7,7 +7,8 @@ const warning = document.querySelectorAll("#warning"),
   experts = document.querySelector("#experts"),
   itBlog = document.querySelector("#itBlog"),
   itSpec = document.querySelector("#itSpec"),
-  layout = document.querySelector("#layout");
+  layout = document.querySelector("#layout"),
+  javaScript = document.querySelector("#js");
 
 warning.forEach(function (warning) {
   warning.addEventListener("click", function () {
@@ -46,6 +47,10 @@ news.addEventListener("click", () => {
   location.href = "html/news.html";
 });
 
+/*form.addEventListener("click", () => {
+  location.href = "html/form.html";
+});*/
+
 /*yandex.addEventListener("click", () => {
   location.href = "html/yandex.html";
 });*/
@@ -66,6 +71,10 @@ itSpec.addEventListener("click", () => {
   location.href = "html/itSpec.html";
 });
 
-layout.addEventListener("click", () => {
+/*layout.addEventListener("click", () => {
   location.href = "html/layout.html";
+});*/
+
+javaScript.addEventListener("click", () => {
+  location.href = "html/javascript.html";
 });
