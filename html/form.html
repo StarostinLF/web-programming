@@ -1,42 +1,73 @@
 <!DOCTYPE html>
+
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./css/style.css" />
+
     <title>Форма</title>
+
+    <link rel="stylesheet" href="../styles/css/globals.css" />
+    <link rel="stylesheet" href="../styles/css/form.css" />
   </head>
-  <body>
-    <h1>Форма</h1>
-    <form>
-      <div class="container">
-        <span>Контактная информация</span><br />
-        Имя: <input type="text" name="firstname" /><br />
-        Фамилия: <input type="text" name="lastname" /><br />
-        Год рождения:
-        <select id="date" name="date">
-          <option value="2000">2000</option>
-          <option value="2010">2010</option>
-          <option value="2020">2020</option>
-        </select>
-        <br />
-        Город: <input type="text" name="town" />
-      </div>
 
-      <textarea
-        rows="10"
-        cols="45"
-        placeholder="Информация о заказе"
-      ></textarea>
-      <br />
+  <body class="page">
+    <main class="main">
+      <section class="section">
+        <h1 class="section__title">Форма</h1>
+        <form class="form">
+          <div class="form__input-container">
+            <p class="form__title">Контактная информация</p>
+            <fieldset class="fieldset flex">
+              <label for="firstname">Имя:</label>
+              <input type="text" name="firstname" id="firstname" />
+            </fieldset>
+            <fieldset class="fieldset flex">
+              <label for="lastname">Фамилия: </label>
+              <input type="text" name="lastname" id="lastname" />
+            </fieldset>
+            <fieldset class="fieldset flex">
+              <label for="date">Год рождения:</label>
+              <select id="date" name="date" id="date">
+                <option value="2000">2000</option>
+                <option value="2010">2010</option>
+                <option value="2020">2020</option>
+              </select>
+            </fieldset>
+            <fieldset class="fieldset flex">
+              <label for="city">Город:</label>
+              <input type="text" name="city" id="city" />
+            </fieldset>
+          </div>
 
-      <input type="checkbox" />Я хочу получать рекламу <br />
-      <input type="checkbox" checked />Я хочу чтобы мои данные раздавались всем
-      подряд<br />
+          <textarea
+            rows="10"
+            cols="45"
+            placeholder="Информация о заказе"
+            class="textarea"
+          ></textarea>
+          <br />
 
-      <input type="reset" value="Отчистить" />
-      <input type="submit" value="Отправить!" />
-    </form>
+          <fieldset class="fieldset form__checkboxes">
+            <label><input type="checkbox" />Я хочу получать рекламу</label>
+            <label
+              ><input type="checkbox" checked />Я хочу чтобы мои данные
+              раздавались всем подряд</label
+            >
+          </fieldset>
+
+          <button type="reset">Очистить</button>
+          <button type="submit" id="submit-button">Отправить!</button>
+        </form>
+      </section>
+
+      <button class="button" id="back-to-general-page">
+        Вернуться на главную
+      </button>
+    </main>
+
+    <script src="../scripts/back-to-main-page.js"></script>
+    <script src="../scripts/form.js"></script>
   </body>
 </html>

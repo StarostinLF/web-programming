@@ -47,9 +47,9 @@ news.addEventListener("click", () => {
   location.href = "html/news.html";
 });
 
-/*form.addEventListener("click", () => {
+form.addEventListener("click", () => {
   location.href = "html/form.html";
-});*/
+});
 
 /*yandex.addEventListener("click", () => {
   location.href = "html/yandex.html";

@@ -1,10 +1,47 @@
-.container {
-  width: fit-content;
-  border: solid black 1px;
+.flex {
+  display: flex;
+  gap: 10px;
 }
 
-span {
-  position: fixed;
-  top: 70px;
-  background-color: white;
+.page {
+  margin: 0 auto;
+  max-inline-size: 960px;
+}
+
+.section {
+  margin: 10px 0;
+}
+
+.form {
+  &__input-container {
+    width: fit-content;
+    padding: 25px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: solid black 1px;
+  }
+
+  &__title {
+    position: absolute;
+    top: -25px;
+    background-color: white;
+  }
+
+  &__checkboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+.fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.textarea {
+  margin: 10px 0;
 }
