@@ -1,5 +1,4 @@
-const warning = document.querySelectorAll("#warning"),
-  football = document.querySelector("#football"),
+const football = document.querySelector("#football"),
   news = document.querySelector("#news"),
   form = document.querySelector("#form"),
   yandex = document.querySelector("#yandex"),
@@ -9,35 +8,6 @@ const warning = document.querySelectorAll("#warning"),
   itSpec = document.querySelector("#itSpec"),
   layout = document.querySelector("#layout"),
   javaScript = document.querySelector("#js");
-
-warning.forEach(function (warning) {
-  warning.addEventListener("click", function () {
-    const page = document.querySelector("script");
-
-    page.insertAdjacentHTML(
-      "beforebegin",
-      `
-        <dialog class="dialog" id="dialog-id">
-          <p>Это задание пока не выполнено.</p>
-          <button
-              class="button"
-              type="submit"
-              onclick="closeDialog()"
-              aria-controls="dialog-id"
-            >
-              Закрыть
-          </button>
-        </dialog>
-      `
-    );
-    document.querySelector(".dialog").showModal();
-  });
-});
-
-function closeDialog() {
-  window["dialog-id"].close();
-  document.querySelector(".dialog").remove();
-}
 
 football.addEventListener("click", () => {
   location.href = "html/football.html";
