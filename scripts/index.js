@@ -18,7 +18,7 @@ warning.forEach(function (warning) {
       "beforebegin",
       `
         <dialog class="dialog" id="dialog-id">
-          <p>Это задание пока не готово. Посмотрите его чуть позднее.</p>
+          <p>Это задание пока не выполнено.</p>
           <button
               class="button"
               type="submit"
