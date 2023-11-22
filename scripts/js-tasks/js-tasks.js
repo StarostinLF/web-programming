@@ -6,7 +6,10 @@ const jsSection = document.querySelector(".section"),
   checkRange = jsSection.querySelector("#checkAgeRange"),
   breakKunc = jsSection.querySelector("#checkBreak"),
   callbackFunc = jsSection.querySelector("#returnCallback"),
-  geometricFigure = jsSection.querySelector("#CheckGeometrinFigure");
+  geometricFigure = jsSection.querySelector("#CheckGeometrinFigure"),
+  arrayOfObjects = jsSection.querySelector("#arrayOfObjects"),
+  avgStudentsPoint = jsSection.querySelector("#avgStudentsPoint"),
+  avgStudentPoint = jsSection.querySelector("#avgStudentPoint");
 
 /* Promt и username */
 function enterUsername() {
@@ -161,7 +164,22 @@ function checkGeometricFigure() {
   );
 }
 
-/* Обработчики */
+/* Массив объектов (ссылка на страницу) */
+/*arrayOfObjects.addEventListener("click", () => {
+  location.href = "html/js/jsArrayOfObjects.html";
+});*/
+
+/* Рассчет средней оценки среди студентов (ссылка на страницу) */
+/*avgStudentsPoint.addEventListener("click", () => {
+  location.href = "html/js/avgStudentPoint.html";
+});*/
+
+/* Рассчет средней оценки студента (ссылка на страницу) */
+/*avgStudentPoint.addEventListener("click", () => {
+  location.href = "html/js/avgStudentsPoint.html";
+});*/
+
+/* Обработчики событий */
 promptUsername.addEventListener("click", () => enterUsername());
 trianglePerimeter.addEventListener("click", () => calculateTrianglePerimeter());
 searchNuber.addEventListener("click", () => searchMaxNuber());
