@@ -95,6 +95,10 @@ p {
       text-transform: uppercase;
       list-style: none;
       color: $third-color;
+
+      &_active {
+        color: $main-color;
+      }
     }
   }
 }
@@ -215,7 +219,16 @@ p {
   color: $ackground-page-color;
 
   &__text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     width: 30%;
+  }
+
+  &__message-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
   }
 
   &__title {
@@ -236,4 +249,5 @@ p {
 .address {
   display: flex;
   flex-direction: column;
+  font-style: normal;
 }

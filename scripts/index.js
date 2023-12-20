@@ -41,9 +41,9 @@ itSpec.addEventListener("click", () => {
   location.href = "html/itSpec.html";
 });
 
-/*layout.addEventListener("click", () => {
+layout.addEventListener("click", () => {
   location.href = "html/layout.html";
-});*/
+});
 
 javaScript.addEventListener("click", () => {
   location.href = "html/js/javascript.html";

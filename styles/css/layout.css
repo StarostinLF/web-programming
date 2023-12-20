@@ -71,6 +71,9 @@ p {
   list-style: none;
   color: var(--third-color);
 }
+.nav__list-item_active {
+  color: var(--main-color);
+}
 
 .blog {
   display: flex;
@@ -162,7 +165,15 @@ p {
   color: var(--background-page-color);
 }
 .footer__text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   width: 30%;
+}
+.footer__message-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 .footer__title {
   margin-bottom: 24px;
@@ -178,4 +189,5 @@ p {
 .address {
   display: flex;
   flex-direction: column;
+  font-style: normal;
 }
