@@ -104,9 +104,7 @@ function checkBreak() {
       continue;
     }
 
-    if (number < 0) {
-      break;
-    }
+    if (number < 0) break;
 
     count++;
     sum += number;
@@ -165,19 +163,22 @@ function checkGeometricFigure() {
 }
 
 /* Массив объектов (ссылка на страницу) */
-/*arrayOfObjects.addEventListener("click", () => {
-  location.href = "html/js/jsArrayOfObjects.html";
-});*/
+/*arrayOfObjects.addEventListener(
+  "click",
+  () => (location.href = "html/js/jsArrayOfObjects.html")
+);*/
 
 /* Рассчет средней оценки среди студентов (ссылка на страницу) */
-/*avgStudentsPoint.addEventListener("click", () => {
-  location.href = "html/js/avgStudentPoint.html";
-});*/
+/*avgStudentsPoint.addEventListener(
+  "click",
+  () => (location.href = "html/js/avgStudentPoint.html")
+);*/
 
 /* Рассчет средней оценки студента (ссылка на страницу) */
-/*avgStudentPoint.addEventListener("click", () => {
-  location.href = "html/js/avgStudentsPoint.html";
-});*/
+/*avgStudentPoint.addEventListener(
+  "click",
+  () => (location.href = "html/js/avgStudentsPoint.html")
+);*/
 
 /* Обработчики событий */
 promptUsername.addEventListener("click", () => enterUsername());
