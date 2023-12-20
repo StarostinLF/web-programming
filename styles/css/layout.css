@@ -91,6 +91,9 @@ p {
   justify-content: space-between;
 }
 .blog__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   width: 70%;
 }
 .blog__list .item {
@@ -102,8 +105,7 @@ p {
   left: -90px;
 }
 .blog__list .item__image {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
 }
 .blog__list .item__text-container {
   padding: 24px 0 48px;
