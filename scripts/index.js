@@ -1,7 +1,7 @@
 const football = document.querySelector("#football"),
   news = document.querySelector("#news"),
   form = document.querySelector("#form"),
-  yandex = document.querySelector("#yandex"),
+  scooter = document.querySelector("#scooter"),
   cards = document.querySelector("#cards"),
   experts = document.querySelector("#experts"),
   itBlog = document.querySelector("#itBlog"),
@@ -18,7 +18,7 @@ news.addEventListener("click", () => (location.href = "html/news.html"));
 
 form.addEventListener("click", () => (location.href = "html/form.html"));
 
-//yandex.addEventListener("click", () => (location.href = "html/yandex.html"));
+scooter.addEventListener("click", () => (location.href = "html/scooter.html"));
 
 cards.addEventListener("click", () => (location.href = "html/cards.html"));
 
