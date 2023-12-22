@@ -22,6 +22,8 @@ function calcAvgStudentsPoint() {
     new Student("Анна", "Физика", 5),
   ];
 
+  console.log(`Вот массив студентов для проверки:`, students);
+
   function calcAvgPoint(subject) {
     const points = students
       .filter((student) => student.subject === subject)
