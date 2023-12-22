@@ -19,8 +19,8 @@ form.addEventListener("submit", function (event) {
     birthYear: birthYear.value,
     city: city.value,
     orderInfo: orderInfo.value,
-    receiveAds: receiveAds.value,
-    shareData: shareData.value,
+    receiveAds: receiveAds.checked,
+    shareData: shareData.checked,
   };
 
   const storedData = JSON.parse(localStorage.getItem("formDataArray")) || [];
