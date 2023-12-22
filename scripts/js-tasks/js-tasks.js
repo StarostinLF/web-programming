@@ -162,23 +162,11 @@ function checkGeometricFigure() {
   );
 }
 
-/* Массив объектов (ссылка на страницу) */
-/*arrayOfObjects.addEventListener(
-  "click",
-  () => (location.href = "jsArrayOfObjects.html")
-);*/
-
-/* Рассчет средней оценки среди студентов (ссылка на страницу) */
-/*avgStudentsPoint.addEventListener(
-  "click",
-  () => (location.href = "avgStudentPoint.html")
-);*/
-
 /* Рассчет средней оценки студента (ссылка на страницу) */
-/*avgStudentPoint.addEventListener(
+avgStudentsPoint.addEventListener(
   "click",
   () => (location.href = "avgStudentsPoint.html")
-);*/
+);
 
 /* Обработчики событий */
 promptUsername.addEventListener("click", () => enterUsername());
