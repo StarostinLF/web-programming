@@ -31,8 +31,11 @@
               <label for="date">Год рождения:</label>
               <select id="date" name="date" id="date">
                 <option value="2000">2000</option>
-                <option value="2010">2010</option>
-                <option value="2020">2020</option>
+                <option value="2010">2001</option>
+                <option value="2020">2002</option>
+                <option value="2000">2003</option>
+                <option value="2010">2004</option>
+                <option value="2020">2005</option>
               </select>
             </fieldset>
             <fieldset class="fieldset flex">
@@ -40,14 +43,12 @@
               <input type="text" name="city" id="city" />
             </fieldset>
           </div>
-
           <textarea
             rows="10"
             cols="45"
             placeholder="Информация о заказе"
             class="textarea"
           ></textarea>
-
           <fieldset class="fieldset form__checkboxes">
             <label><input type="checkbox" />Я хочу получать рекламу</label>
             <label>
@@ -55,10 +56,14 @@
               раздавались всем подряд
             </label>
           </fieldset>
-
           <button type="reset">Очистить</button>
           <button type="submit" id="submit-button">Отправить!</button>
         </form>
+      </section>
+
+      <section class="section">
+        <h2 class="section__title">Таблица</h2>
+        <div class="section__table"></div>
       </section>
 
       <button class="button" id="back-to-main-page">
