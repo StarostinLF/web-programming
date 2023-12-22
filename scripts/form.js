@@ -43,11 +43,11 @@ form.addEventListener("reset", function () {
 function updateTable(dataArray) {
   tableSection.innerHTML = "";
 
-  const table = document.createElement("table");
-  table.classList.add("table");
+  const table = document.createElement("table"),
+    tableHeader = document.createElement("thead"),
+    headerRow = document.createElement("tr"),
+    tableBody = document.createElement("tbody");
 
-  const tableHeader = document.createElement("thead");
-  const headerRow = document.createElement("tr");
   const headers = [
     "Имя",
     "Фамилия",
@@ -65,10 +65,9 @@ function updateTable(dataArray) {
     headerRow.appendChild(th);
   });
 
-  tableHeader.appendChild(headerRow);
+  table.classList.add("table");
   table.appendChild(tableHeader);
-
-  const tableBody = document.createElement("tbody");
+  tableHeader.appendChild(headerRow);
   table.classList.add("tbody");
 
   dataArray.forEach((data) => {
@@ -76,9 +75,11 @@ function updateTable(dataArray) {
 
     Object.values(data).forEach((value) => {
       const td = document.createElement("td");
+
       td.textContent = value;
       row.appendChild(td);
     });
+
     tableBody.appendChild(row);
   });
 
